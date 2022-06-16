@@ -31,3 +31,12 @@ fn scalar_types() {
     let float: f32 = 2.0;
     let float: f64 = 2.0;
 }
+
+#[allow(unused_variables)]
+fn collection_types() {
+    // Collection types - represent multiple values
+    // Tupples allow us to group together different types
+    let tup: (u8, u16, u32) = (200, 20000, 2000000);
+    let (x, y, z) = tup;
+    let second_value = tup.1; // -> 20000
+}
