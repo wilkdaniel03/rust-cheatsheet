@@ -1,7 +1,8 @@
 fn main() {
     // Loops in rust
     // while_loop();
-    while_let_loop();
+    // while_let_loop();
+    loop_loop();
 }
 
 #[allow(dead_code)]
@@ -14,6 +15,7 @@ fn while_loop() {
     }
 }
 
+#[allow(dead_code)]
 fn while_let_loop() {
     // There is also somethink called while let loop
     // this loop will iterate as long as
@@ -21,5 +23,20 @@ fn while_let_loop() {
     let mut nums = vec![1, 2, 3];
     while let Some(x) = nums.pop() {
         println!("{}", x);
+    }
+}
+
+fn loop_loop() {
+    // A loop loop will iterate forever until
+    // somethink eventually will break the loop
+    let mut x = 0;
+    loop {
+        match x {
+            0..=4 => {
+                println!("{}", x);
+                x += 1;
+            },
+            _ => break,
+        }
     }
 }
