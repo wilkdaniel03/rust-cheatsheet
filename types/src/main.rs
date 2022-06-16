@@ -4,6 +4,7 @@
 
 fn main() {
     scalar_types();
+    collection_types();
 }
 
 #[allow(unused_variables)]
@@ -39,4 +40,11 @@ fn collection_types() {
     let tup: (u8, u16, u32) = (200, 20000, 2000000);
     let (x, y, z) = tup;
     let second_value = tup.1; // -> 20000
+    
+
+    // Array type
+    // every element in array have to have the same type
+    // useful data type when allocating data on stack
+    let nums: [i8; 5] = [1, 2, 3, 4, 5];
+    let num = nums[2]; // -> 3
 }
