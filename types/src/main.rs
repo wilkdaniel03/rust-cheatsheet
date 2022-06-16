@@ -26,4 +26,8 @@ fn scalar_types() {
     let num = 0xff;             // Hex
     let num = 0o77;             // Octal
     let num = 0b1111_0000;      // Binary
+
+    // Floating point types
+    let float: f32 = 2.0;
+    let float: f64 = 2.0;
 }
