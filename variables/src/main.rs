@@ -1,7 +1,8 @@
 fn main() {
     // immutable_variable();
     // mutable_variable();
-    constant();
+    // constant();
+    shadow_variable();
 }
 
 #[allow(dead_code)]
@@ -30,4 +31,15 @@ fn constant() {
     const X: i32 = 5;
     // Constants have to have declared type and hardcoded value
     // Constants should be named in uppercase
+}
+
+#[allow(dead_code)]
+fn shadow_variable() {
+    // Declare a immutable variable and shadow it afterwards
+    let x = "  ";
+    let x = x.len();
+    println!("{}", x);
+    // While shadowing we're creating new variable
+    // what we wouldn't do editing mutable variable
+    // the difference is we can change a type of the value
 }
