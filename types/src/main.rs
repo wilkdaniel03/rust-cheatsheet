@@ -19,4 +19,11 @@ fn scalar_types() {
     // for big numbers or just use that
     let int: isize = 100; let int: usize = 200;
     // 128 bits are certainly used in cryptography
+    
+
+    // Integer literals
+    let num = 10_100;           // Decimal
+    let num = 0xff;             // Hex
+    let num = 0o77;             // Octal
+    let num = 0b1111_0000;      // Binary
 }
