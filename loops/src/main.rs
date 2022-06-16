@@ -2,7 +2,8 @@ fn main() {
     // Loops in rust
     // while_loop();
     // while_let_loop();
-    loop_loop();
+    // loop_loop();
+    for_loop();
 }
 
 #[allow(dead_code)]
@@ -26,6 +27,7 @@ fn while_let_loop() {
     }
 }
 
+#[allow(dead_code)]
 fn loop_loop() {
     // A loop loop will iterate forever until
     // somethink eventually will break the loop
@@ -38,5 +40,13 @@ fn loop_loop() {
             },
             _ => break,
         }
+    }
+}
+
+fn for_loop() {
+    // Old good for loops
+    // python-range-like syntax
+    for x in 1..11 {
+        println!("{}", x);
     }
 }
